@@ -1,0 +1,258 @@
+/*Prefix
+
+Android/Chrome/ios/safari: -webkit- 
+Firefox: -moz-
+Opera: -o-
+
+*/
+
+
+body{
+
+    left: 0px;
+    right: 0px;
+
+    background-color: midnightblue;
+    font-family: 'Open Sans', sans-serif;
+    height: 300vh;
+    overflow-x: hidden;
+}
+
+
+
+.text{
+    color: darkslategray;
+    text-align: center;
+    top: 20%;
+    position: relative;
+}
+h2{
+    font-style: italic;
+    font-weight: 100
+}
+h1{
+    font-family: 'Baloo Chettan', cursive;
+    word-spacing: 4;
+    letter-spacing: 2;
+    color: black;
+}
+.Whitestart{
+    background-image:url(../images/svg/Startcreamewave.svg);
+    height: 50vh;
+    width: 100vw;
+    left: -0.6vw;
+    top: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+    z-index: 3;
+    }
+
+
+.yearrights{
+    bottom: -345%;
+    z-index: 4; 
+    right: 50px;
+    position: absolute;
+}
+
+#begin{
+    margin: auto;
+    top: 65%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    left: -0.6vw;
+    z-index: 3;
+}
+
+.astronaut{
+    z-index: 4;
+    position: absolute;
+    animation: float 30s linear infinite; 
+    bottom:  -340%;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/svg/Me.svg);
+    transform:rotate(50deg);
+    right: -600px;
+}
+
+@keyframes float{
+    0%{
+        transform: rotate(50deg);
+        right: -600px;
+    }
+    100%{
+        transform: rotate(-20deg);
+       right: 2000px;
+    }
+}
+/*===================================================*/
+/*_________________Rocket animations etc_____________*/
+/*===================================================*/
+
+
+.frame{
+    height: 100vh;
+    width: 100vw;
+    position: fixed
+        left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: none;
+    z-index: 2;
+}
+
+.rocket{
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: inherit;
+    margin: auto; 
+    background-image: url(../images/svg/Rocket.svg);
+    background-size: cover;
+    background-position: center;
+    animation: wiggle 1s infinite;
+    z-index: 2;
+
+}
+
+.Metravling{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: none;
+    height: auto;
+    z-index: 2;
+}
+@keyframes wiggle{
+    0%{
+        transform: rotate(0deg)
+    }
+    25%{
+        transform: rotate(2deg)
+    }
+    50%{
+        transform: rotate(0deg)
+    }
+    75%{
+        transform: rotate(-2deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+
+.flame{
+ background-color: white;
+border-radius: 360px;
+position: fixed;
+animation: Milkburn 1.5s normal infinite forwards linear;
+bottom: 30%;
+    z-index: 2;
+}
+
+#flame1{
+width: 30px;
+height: 30px;
+left: 0px;
+right: 0px;
+margin: auto;
+
+
+}
+
+#flame2{
+animation-delay: 0.5s;
+width: 20px;
+height: 20px;
+left: 50%;
+margin: auto;
+
+
+}
+#flame3{
+animation-delay: 1s;
+width: 20px;
+height: 20px;
+right: 50%;
+margin: auto;
+
+
+    
+    
+    
+}
+
+@keyframes Milkburn{
+    0%{
+        bottom: 30%;
+    }
+    100%{
+        bottom: 20%;
+    }
+}
+
+/*===================================================*/
+/*___________________Earth & Moon_____________________*/
+/*===================================================*/
+.earthmoon{
+    width: 500px;
+    height: 500px;
+    top:250%;
+    position: absolute;
+    z-index: 1;
+}
+
+/*_________________________Earth_____________________*/
+
+
+.earth{
+    z-index: 1;
+    background-image: url(../images/svg/earth.svg);
+    width: 400px;
+    height: 400px;
+    left: 10vh;
+    margin:auto;
+    position: inherit;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    
+}
+/*_________________________Moon_____________________*/
+
+
+.moon{
+    z-index: 1;
+    background-image: url(../images/svg/Moon.svg);
+    width: 500px;
+    height: 500px;
+    left:;
+    margin:none;
+    top:;
+    position: inherit;
+    animation: rotates 18s infinite forwards normal linear;
+}
+
+
+@keyframes rotates{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
